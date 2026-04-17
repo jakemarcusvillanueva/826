@@ -1,0 +1,316 @@
+
+@font-face {
+  font-family: Michroma;
+  src: url(Michroma.True.ttf);
+}
+
+*{
+font-family: "Michroma", ;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Michroma", sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+padding-top: 90px;
+}
+
+header{
+position: fixed;
+top: 0;
+background: rgba(0, 0, 0, 0.7);
+padding:20px 40px;
+width: 100%;
+height: 90px;
+z-index: 1000;
+}
+
+/* Logo Styles */
+.logo-826 {
+  border-radius: 4px;
+  padding: 1px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-826 img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+nav{
+background: transparent;
+display:flex;
+justify-content:space-between;
+align-items:center;
+width: 100%;
+}
+
+.img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.logo{
+font-size:24px;
+letter-spacing:3px;
+}
+
+/* Navigation Styles */
+.nav-links{
+background-color: transparent;
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+position: relative;
+transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #00a1a1;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+color: #00a1a1;
+}
+
+.nav-links a:hover::after {
+transform: scaleX(1);
+}
+
+.btn{
+background:#00a1a1;
+padding:10px 20px;
+border-radius:5px;
+color:white;
+font-weight:bold;
+cursor: pointer;
+}
+
+/* Hero Section */
+.hero{
+padding-top:50px;
+height:90;
+background:url("images/car.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+padding-left:80px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+max-width:400px;
+margin-bottom:25px;
+}
+
+/* Services Section */
+.services {
+background: transparent;
+padding: 20px 20px;
+text-align:center;
+font-size: 25px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  top: 20px;
+  left: 0px;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(50%); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 40px;
+}
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* About Section */
+.about{
+padding:40px 60px;
+background:black;
+}
+
+/* Reviews Section */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background: #1e1e1e;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37; 
+}
+
+.stars {
+    color: #d4af37; 
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-style: italic;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.client-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* Contact Section */
+.contact{
+padding:80px 60px;
+text-align:center;
+}
+
+form{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+margin-left:auto;
+margin-right:auto;
+}
+
+input,textarea{
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#00FFFF;
+border:none;
+padding:12px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+}
+/* Logo Section */
+.footer-row {
+  display: flex;
+  justify-content: space-between; /* logos left, social right */
+  align-items: center;
+  
+}
+
+.Logo {
+  display: flex;
+  gap: 15px;
+}
+
+.Social {
+  cursor: pointer;
+  justify-content: right;
+  display: flex;
+  gap: 10px;
+}
+footer{ 
+  text-align: right;
+  background-color: #111;
+  color: white;
+}
